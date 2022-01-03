@@ -3,6 +3,7 @@ Some configuration files and the like that I tend to use
 
 [Locale](#locale)  
 [Video settings](#video-settings-xorg-and-lightdm)
+[Audio settings](#audio-settings)
 
 # Locale
 
@@ -34,3 +35,17 @@ And change into:
 ```
 display-setup-script=/home/USERNAME/displaysettings.sh
 ```
+
+# Audio settings
+
+Boost your audio quality with ```pulseaudio```
+Edit ```/etc/pulse/daemon.conf```, search for:
+```
+; default-sample-rate = 4XXXX
+```
+And change it into
+```
+; default-sample-rate = 48000
+```
+Copy your modified ```/etc/pulse/daemon.conf``` into ```~/.config.pulse/```
+
