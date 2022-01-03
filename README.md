@@ -3,7 +3,7 @@ Some configuration files and the like that I tend to use
 
 [Locale](#locale)  
 [Video settings](#video-settings-xorg-and-lightdm)  
-[Audio settings](#audio-settings)
+[Audio settings](#audio-settings)  
 [Network settings](#network-settings)
 
 # Locale
