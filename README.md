@@ -4,6 +4,7 @@ Some configuration files and the like that I tend to use
 [Locale](#locale)  
 [Video settings](#video-settings-xorg-and-lightdm)  
 [Audio settings](#audio-settings)
+[Network settings](#network-settings)
 
 # Locale
 
@@ -49,3 +50,10 @@ And change it into
 ```
 Copy your modified ```/etc/pulse/daemon.conf``` into ```~/.config.pulse/```
 
+# Network settings
+
+When using ```iwd``` together with ```NetworkManager``` one has to configure ```/etc/NetworkManager/NetworkManager.conf```.
+Add these lines:
+```
+[device]
+wifi.backend=iwd
