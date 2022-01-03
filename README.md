@@ -24,7 +24,7 @@ LANG=en_US.UTF-8
 
 Xorg sees VR-headset as second monitor, making certain windows out of focus. Xmonad will not work.
 
-Copy [displaysettings.sh](settings/displaysettings.sh) to ```~/```
+Copy [displaysettings.sh](displaysettings.sh) to ```~/```
 
 ```/etc/lightdm/lightdm.conf```
 Under header ```[Seat:*]``` search for:
