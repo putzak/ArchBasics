@@ -8,7 +8,7 @@ Some configuration files and the like that I tend to use
 
 # Locale
 
-Fixes incorrect display of ncspot.
+Fixes incorrect display of ```ncspot```.
 
 Edit ```/etc/locale.gen``` and uncomment ```en_US-8``` (and other needed locales).
 Generate locales by running:
