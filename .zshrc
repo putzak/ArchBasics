@@ -8,7 +8,7 @@ export ZSH="/home/rik/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="daveverwer"
+ZSH_THEME="wezm+"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -92,7 +92,19 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+#lias qt="qutebrowser"
+#alias zshcfg="svim ~/.zshrc"
+#alias ohmyzsh="svim ~/.oh-my-zsh"
+#alias xmncfg="svim ~/.xmonad/xmonad.hs"
+#alias svim="sudo vim"
+#alias SPT="ncspot"
+#alias spac="sudo pacman"
+#alias SHUT="shutdown -P 1"
+#alias NEWS="newsboat"
+#alias RADIO="pyradio"
+#alias TOP="bpytop"
+#alias CALC="speedcrunch"
+#alias RNG="sudo ranger" plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
@@ -112,7 +124,7 @@ alias CALC="speedcrunch"
 alias RNG="sudo ranger"
 
 # Syntax Highlighting
-source /home/rik/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Fetch
 neofetch
