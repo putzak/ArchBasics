@@ -1,1 +1,1 @@
-xrandr --auto && xrandr --output DP-1 --off
+xrandr --auto && xrandr --output HDMI-0 --off
