@@ -23,7 +23,7 @@ Config
                  , Run DateZone "<fc=#a9a1e1>%H:%M </fc> " "" "Europe/London" "gmt" 10
                  , Run Weather "EHLE"
                      [ "-t", "<tempC> <fc=#dfdfdf>°C </fc>"
-                     , "-L", "-10", "-H", "30"
+                     , "-L", "8", "-H", "25"
                      , "--normal", "green", "--high", "red", "--low", "lightblue"
                      ] 36000
                  ]
