@@ -259,6 +259,7 @@ main = do
         , borderWidth = myBorderWidth
         , normalBorderColor = myNormColor
         , focusedBorderColor = myFocusColor
+        , focusFollowsMouse = false
         , logHook = dynamicLogWithPP $ xmobarPP
             { ppOutput = hPutStrLn xmproc
             , ppTitle = xmobarColor color16 "" . shorten 60
