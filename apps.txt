@@ -1,7 +1,7 @@
 ## Some Apps I like to install
 
 # Pacman
-alacritty tmux htop bpytop yay bitwarden qutebrowser firefox neofetch lightdm nitrogen nerd-fonts-mononoki noto-fonts pulseaudio zsh mpv thunderbird
+alacritty tmux htop bpytop yay bitwarden qutebrowser firefox neofetch lightdm nitrogen nerd-fonts-mononoki noto-fonts pulseaudio zsh mpv thunderbird xdotool
 
 # Aur
 ncspot pyradio protonvpn zathura
