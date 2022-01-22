@@ -112,7 +112,7 @@ myEditor :: String
 myEditor = myTerminal ++ " -e vim " -- Sets vim as editor
 
 myBorderWidth :: Dimension
-myBorderWidth = 0           -- Sets border width for windows
+myBorderWidth = 1           -- Sets border width for windows
 
 myNormColor :: String       -- Border color of normal windows
 myNormColor   = colorBack   -- This variable is imported from Colors.THEME
@@ -144,7 +144,6 @@ mySpacing' :: Integer -> l a -> XMonad.Layout.LayoutModifier.ModifiedLayout Spac
 mySpacing' i = spacingRaw True (Border i i i i) True (Border i i i i) True
 
 tall     = renamed [Replace "tall"]
-           $ smartBorders
            $ windowNavigation
            $ addTabs shrinkText myTabTheme
            $ subLayout [] (smartBorders Simplest)
@@ -183,7 +182,7 @@ myTabTheme = def { fontName            = myFont
 
 myShowWNameTheme :: SWNConfig
 myShowWNameTheme = def
-    { swn_font         = "xft:Ubuntu:bold:size=40"
+    { swn_font         = "xft:Ubuntu:bold:size=35"
     , swn_fade         = 1.0
     , swn_bgcolor      = "#1c1f25"
     , swn_color        = "#ffffff"
@@ -219,6 +218,8 @@ myKeys =
         , ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ +3%")
         , ("M-;", sendMessage (T.Toggle "floats"))
         , ("M-'", sinkAll)
+        , ("M-u", spawn (myTerminal ++ " -e zsh ~/.config/brightnessUp.sh"))
+        , ("M-d", spawn (myTerminal ++ " -e zsh ~/.config/brightnessDown.sh"))
         ]
 
 --------------
@@ -259,10 +260,11 @@ main = do
         , workspaces = myWorkspaces
         , borderWidth = myBorderWidth
         , normalBorderColor = myNormColor
-        , focusedBorderColor = myFocusColor
+        , focusFollowsMouse = False
+	, focusedBorderColor = myFocusColor
         , logHook = dynamicLogWithPP $ xmobarPP
             { ppOutput = hPutStrLn xmproc
-            , ppTitle = xmobarColor color16 "" . shorten 60
+            , ppTitle = xmobarColor color16 "" . shorten 120
             , ppCurrent = xmobarColor color06 "" . wrap "[" "]" 
             , ppVisible = xmobarColor color06 "" . clickable
             , ppHidden = xmobarColor color03 "" . clickable 

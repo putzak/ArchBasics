@@ -4,7 +4,7 @@
 
 Config 
     {  position = TopSize L 100 24
-    , font = "xft:monospace:weight=bold:pixelsize=12:antialias=true:hinting=true"
+    , font = "xft:monospace:weight=bold:pixelsize=14:antialias=true:hinting=true"
     , additionalFonts = [ "xft:Mononoki Nerd Font:pixelsize=11:antialias=true:hinting=true"
                         , "xft:Font Awesome 5 Free Solid:pixelsize=12"
                         , "xft:Font Awesome 5 Brands:pixelsize=12"
@@ -23,7 +23,7 @@ Config
                  , Run DateZone "<fc=#a9a1e1>%H:%M </fc> " "" "Europe/London" "gmt" 10
                  , Run Weather "EHLE"
                      [ "-t", "<tempC> <fc=#dfdfdf>°C </fc>"
-                     , "-L", "-10", "-H", "30"
+                     , "-L", "8", "-H", "25"
                      , "--normal", "green", "--high", "red", "--low", "lightblue"
                      ] 36000
                  ]

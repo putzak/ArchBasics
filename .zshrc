@@ -70,7 +70,11 @@ ZSH_THEME="wezm+"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+	zsh-autosuggestions
+	dirhistory
+	git
+        )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,22 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
-#lias qt="qutebrowser"
-#alias zshcfg="svim ~/.zshrc"
-#alias ohmyzsh="svim ~/.oh-my-zsh"
-#alias xmncfg="svim ~/.xmonad/xmonad.hs"
-#alias svim="sudo vim"
-#alias SPT="ncspot"
-#alias spac="sudo pacman"
-#alias SHUT="shutdown -P 1"
-#alias NEWS="newsboat"
-#alias RADIO="pyradio"
-#alias TOP="bpytop"
-#alias CALC="speedcrunch"
-#alias RNG="sudo ranger" plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
+
 # Example aliases
 alias qt="qutebrowser"
 alias zshcfg="svim ~/.zshrc"
@@ -122,6 +111,8 @@ alias RADIO="pyradio"
 alias TOP="bpytop"
 alias CALC="speedcrunch"
 alias RNG="sudo ranger"
+alias BUP="zsh ~/.config/brightnessUp.sh"
+alias BDOWN="zsh ~/.config/brightnessDown.sh"
 
 # Syntax Highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
